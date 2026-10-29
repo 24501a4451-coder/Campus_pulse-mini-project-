@@ -1,7 +1,7 @@
 
-import { FormEvent, useState } from "react";
+import { useState, type FormEvent } from "react";
 import { AlertCircle, CheckCircle2, Send } from "lucide-react";
-import { createIssue, IssuePriority } from "../services/api";
+import { createIssue, type IssuePriority } from "../services/api";
 
 export default function ReportIssues() {
   const [formData, setFormData] = useState({
